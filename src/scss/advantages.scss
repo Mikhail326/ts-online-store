@@ -1,0 +1,43 @@
+.advantages {
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_item {
+      width: 240px;
+      height: 260px;
+      padding: 24px;
+      border-radius: 40px;
+      background: var(--advantages-liner);
+      position: relative;
+      overflow: hidden;
+
+      & .item-title {
+        font-weight: 500;
+        margin-bottom: 7px;
+      }
+      & .item-description {
+        color: var(--light-dark);
+        font-size: 14px;
+        letter-spacing: 0.1px;
+      }
+
+      &:nth-child(2) img {
+        left: 0;
+      }
+
+      &:nth-child(5) img {
+        left: 23px;
+      }
+
+      & img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        
+      }
+    }
+  }
+}
