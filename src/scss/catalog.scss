@@ -1,0 +1,146 @@
+.catalog {
+  margin-top: 50px;
+
+  &-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    & a {
+      margin-top: 2px;
+      color: #a9a9a9;
+      font-size: 18px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--main);
+      }
+    }
+  }
+
+  &-slider {
+    & .slick-list {
+      overflow: hidden;
+    }
+    & .slick-track {
+      display: flex;
+      gap: 24px;
+    }
+
+    &_slide {
+      position: relative;
+      margin-top: 50px;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+      &:hover {
+        box-shadow: 10px -10px 34px 0px rgba(6, 52, 253, 0.12), 0px 10px 33px 0px rgba(0, 252, 222, 0.12),
+          -10px 0px 33px 0px rgba(236, 52, 254, 0.12);
+      }
+
+      &:hover .slide-info_details {
+        display: block;
+      }
+
+      &:hover .slide-info_price-btn {
+        display: flex;
+      }
+
+      &-icon {
+        position: absolute;
+        top: 16px;
+        right: 17px;
+        font-size: 35px;
+        color: #A9A9A9;
+      }
+
+      & .slide-info {
+        padding: 12px;
+
+        &_details {
+          display: none;
+
+          & ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-bottom: 15px;
+
+            & li {
+              font-weight: 500;
+              padding: 4px 6px;
+              background-color: #eee;
+              border-radius: 39px;
+              transition: 0.3s ease;
+              border: 1px solid #eee;
+
+              &:hover {
+                border: 1px solid var(--hover-bar);
+                background-color: var(--light);
+                color: var(--hover-bar);
+              }
+            }
+          }
+
+          & span {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 8px;
+          }
+        }
+
+        &_price {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          & span {
+            font-size: 24px;
+            font-weight: 500;
+          }
+
+          &-btn {
+            display: none;
+            align-items: center;
+            gap: 10px;
+            border-radius: 47px;
+            background: var(--white, #fff);
+            box-shadow: 0px 0px 20px 0px rgba(42, 92, 246, 0.3);
+            padding: 10px 16px;
+            transition: 0.3s ease;
+
+            &:hover {
+              background: var(--hover-liner);
+            }
+
+            &:hover i,
+            &:hover span {
+              color: var(--btn);
+            }
+
+            & i {
+              transition: 0.3s;
+              font-size: 20px;
+              color: var(--hover-bar);
+            }
+
+            & span {
+              transition: 0.3s;
+              color: var(--hover-bar);
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      & p {
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

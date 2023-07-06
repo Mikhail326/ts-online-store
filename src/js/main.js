@@ -3,8 +3,14 @@ $(document).ready(function () {
     infinite: true,
     centerMode: true,
     slidesToShow: 1,
-    centerMode:true,
     arrows: false,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
   })
-})
+
+  $('.catalog-slider').slick({
+    slidesToShow: 4,
+    arrows: false,
+  })
+}) 

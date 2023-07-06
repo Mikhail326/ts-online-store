@@ -12,6 +12,7 @@
   --hover-bar: #2a5cf6;
   --title: #5c71b2;
   --btn: #fff;
+  --bg-body:#FBFBFB;
   --light: #f5f8ff;
   --light-dark: #525252;
   --blue-linear: linear-gradient(23deg, #2a5cf6 0%, #2a5cf6 0.01%, #7191f4 100%);
@@ -25,6 +26,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
+  background-color: var(--bg-body);
 }
 
 body {
@@ -50,6 +52,11 @@ h2 {
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 0.1px;
+}
+
+h3 {
+font-size: 28px;
+font-weight: 600;
 }
 
 .container {
