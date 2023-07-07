@@ -1,4 +1,11 @@
 .advantages {
+  @media (max-width: 1080px) {
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
   &-list {
     display: flex;
     align-items: center;
@@ -13,14 +20,40 @@
       position: relative;
       overflow: hidden;
 
+      @media (max-width: 1270px) {
+        width: 200px;
+        height: 220px;
+      }
+
+      @media (max-width: 1080px) {
+        min-width: 155px;
+        height: 200px;
+        padding: 15px;
+        margin-right: 12px;
+      }
+
       & .item-title {
         font-weight: 500;
         margin-bottom: 7px;
+
+        @media (max-width: 1270px) {
+          font-size: 12px;
+        }
       }
       & .item-description {
         color: var(--light-dark);
         font-size: 14px;
         letter-spacing: 0.1px;
+
+        @media (max-width: 1270px) {
+          font-size: 10px;
+        }
+      }
+
+      &:nth-child(1) img {
+        @media (max-width: 1270px) {
+          height: 200px;
+        }
       }
 
       &:nth-child(2) img {
@@ -36,7 +69,13 @@
         bottom: 0;
         right: 0;
 
-        
+        @media (max-width: 1270px) {
+          height: 90px;
+        }
+
+        @media (max-width: 1080px) {
+          height: 70px;
+        }
       }
     }
   }

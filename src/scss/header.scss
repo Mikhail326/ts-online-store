@@ -19,6 +19,10 @@
       gap: 40px;
       font-size: 14px;
       letter-spacing: 0.1px;
+     
+      & :hover {
+        color: var(--hover-bar);
+      }
     }
 
     &_socials {
@@ -328,5 +332,16 @@
     &:hover .header-bottom_bar-icon {
       stroke: var(--hover-bar);
     }
+  }
+}
+
+.active-bar {
+  & .header-bottom_bar-icon {
+    fill: var(--hover-bar);
+    stroke: var(--hover-bar);
+  }
+
+  & span {
+    color: var(--hover-bar);
   }
 }
